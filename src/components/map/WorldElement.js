@@ -3,13 +3,11 @@ import Carte from '../../images/new_bg.png'
 
 
 export const Camera = styled.div`
-    width: 98vw;
-    height: 96vh;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
     background: #fffcda;
     position: relative;
-
-    outline: 5px solid #534741;
 `
 
 export const Map = styled.div`

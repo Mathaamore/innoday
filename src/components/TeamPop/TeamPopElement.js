@@ -11,7 +11,7 @@ export const PopUp = styled.div`
     width: 60vw;
     height: 70vh;
 
-    margin: 13vh 0 0 19vw;
+    margin: 15vh 0 0 20vw;
     
     position: absolute;
 

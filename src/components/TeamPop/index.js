@@ -41,17 +41,20 @@ const TeamPop = ({
               </div>
               <Title>{Projects[Pindex].Titre}</Title>
               <Descp>{Projects[Pindex].Description}</Descp>
-              <div class="row">
+              <div class="row" style={{ /* alignItems: "center" */ }}>
                 <div class="column" style={{width: "40%", textAlign : "center"}}>
                   <YouTube videoId={Projects[Pindex].Video} opts={opts} />
+                  <br />
                 </div>
                 <div class="column" style={{width: "60%", textAlign : "center"}}>
-                  <span>L'équipe :</span><br />
-                  <span>{Projects[Pindex].Equipe}</span>
+                  <span>{Projects[Pindex].Citation}</span><br />
+                  <span style={{fontFamily: "Dancing Script", fontSize: "22px", fontWeight: "600"}}>L'équipe : </span><span>{Projects[Pindex].Equipe}</span>
                 </div>
               </div>
-              <br />
-              <span>Accéder au live : <MdPhotoCameraFront /></span>
+              <div style={{textAlign : "center"}}>
+                <span>Accéder au live :</span><br />
+                <MdPhotoCameraFront style={{fontSize: "30px"}}/>
+              </div>
             </>
             :
             <>
